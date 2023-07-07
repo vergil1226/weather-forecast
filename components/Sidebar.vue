@@ -4,6 +4,7 @@
       class="deep-purple accent-4"
       dark
       permanent
+      width: 375px
     >
       <v-list>
         <v-list-item
