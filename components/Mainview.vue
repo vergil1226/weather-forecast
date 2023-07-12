@@ -1,10 +1,7 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row>
-      <v-col cols="3">
         <Sidebar />
-        </v-col>
-        <v-col cols="9">
   <div class="mainview-weather">
     <Mainview />
     <v-speed-dial
@@ -24,7 +21,6 @@
     <TodayCard />
     <FiveDayForecastCards />
   </div>
-  </v-col>
   </v-row>
   </v-container>
 </template>
