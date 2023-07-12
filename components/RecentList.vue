@@ -234,24 +234,8 @@ export default {
       ],
     };
   },
-  mounted() {
-
-  },
-  methods() {
-    axios.get('http://api.openweathermap.org/geo/1.0/direct?q=Tampa&limit=5&appid={API key}', {
-      params: {
-        q: 'Tampa, 3166',
-        appid: ''
-      },
-    })
-    .then(response => {
-
-    })
-    .catch(error => {
-
-    })
-  }
 }
+
 
 
 </script>
