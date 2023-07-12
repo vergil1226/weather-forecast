@@ -3,6 +3,7 @@
     <v-btn
       dark
       @click="snackbar = true"
+      elevation="0"
     >
       Open Snackbar
     </v-btn>
@@ -17,6 +18,7 @@
           text
           v-bind="attrs"
           @click="snackbar = false"
+          elevation="0"
         >
           Close
         </v-btn>
