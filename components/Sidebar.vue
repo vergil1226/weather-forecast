@@ -1,5 +1,5 @@
 <template>
-  <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook-->
+  <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook - need to update the timeout method-->
   <v-app>
     <v-main>
       <v-card>
@@ -53,11 +53,12 @@ export default {
       // You can access the entered location via `this.searchQuery`
       console.log("Search query:", this.searchQuery);
     },
-    {
-      setTimeout(() => {
-        location.reload();
-      }, 5 * 60 * 1000)
-    };
+//     {
+//       setTimeout(() => {
+//         location.reload();
+//       }, 5 * 60 * 1000)
+//     }
+// }
 }
 }
 </script>
