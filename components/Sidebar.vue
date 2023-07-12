@@ -1,4 +1,5 @@
 <template>
+  <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook-->
   <v-app>
     <v-main>
     <v-card>

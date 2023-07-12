@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       forecast: {
-
+    
       }
     }
   },
@@ -47,13 +47,15 @@ export default {
     // const isSameDate = moment(date1, format).isSame(moment(date2, format));
     // console.log(isSameDate);
   },
+  computed() {
+
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .today-card{
-  width: 940px;
-  height: 217px;
+  max-width: 940px;
   background-color: #001026;
   &__title{
     font-family: SF Pro Display;

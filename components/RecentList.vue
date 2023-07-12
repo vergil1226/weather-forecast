@@ -143,6 +143,7 @@
 </template>
 <!-- need to add mounted, methods, and computed-->
 <script>
+import moment from 'moment-timezone'
 export default {
   data() {
     return {
