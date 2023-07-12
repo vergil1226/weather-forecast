@@ -71,7 +71,7 @@ export default {};
 
 <style lang="scss" scoped>
 .forecast-card {
-  background-color: #001026;
+  background-color: #5096FF;
   width: 455px;
   height: 256px;
   &__title {

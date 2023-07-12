@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="sidebar">
     <v-main>
     <v-card>
       <v-navigation-drawer class="app__sidebar" color="#104084" dark permanent>
@@ -9,7 +9,6 @@
               v-model="searchQuery"
               prepend-inner-icon="mdi-map-marker-outline"
               placeholder="Add Location..."
-              class="white-placeholder white-text"
               @keyup.enter="searchLocation"
             >
             </v-text-field>
@@ -51,12 +50,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.white-placeholder {
-  color: #ffffff
-}
-.app__sidebar{
-  width: 375px;
-  height: 999px;
+.sidebar{
+  max-width: 375px;
 }
 
 </style>
