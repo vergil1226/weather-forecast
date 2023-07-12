@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <v-card>
       <v-navigation-drawer class="app__sidebar" color="#104084" dark permanent>
         <v-list>
           <v-card class="app__card">
@@ -12,7 +13,6 @@
             >
             </v-text-field>
           </v-card>
-          <RecentList />
           <v-list-item v-for="item in items" :key="item.title" link>
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
@@ -23,7 +23,8 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-    <Mainview />
+    </v-card>
+    <recent-list />
   </v-app>
 </template>
 
@@ -33,6 +34,7 @@
 <script>
 import RecentList from './RecentList.vue';
 export default {
+  components: { RecentList },
   data() {
     return {
       searchQuery: "",
@@ -50,10 +52,11 @@ export default {
 
 <style lang="scss" scoped>
 .white-placeholder {
-  color: #ffffff;
+  color: #ffffff
 }
 .app__sidebar{
-  width: 375px;
-  height: 999px;
+  width: 346px;
+  height: 108px;
 }
+
 </style>

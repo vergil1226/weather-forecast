@@ -188,7 +188,7 @@
     </ul>
   </div>
 </template>
-
+<!-- need to add mounted, methods, and computed-->
 <script>
 export default {
   data() {
@@ -229,7 +229,8 @@ export default {
       ],
     };
   },
-};
+  }
+
 </script>
 
 <style lang="scss" scoped>
