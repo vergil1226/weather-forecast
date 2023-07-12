@@ -7,11 +7,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Tarpon Springs</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Tarpon Springs</h1>
+                    <p class="weather-card__degree">30&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Sunny</p>
-                  <p class="weather-card__degree">30</p>
-                  <p class="weather-card__range">High: 34 Low: 28</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Sunny</p>
+                    <p class="weather-card__range">
+                      High: 34&deg; Low: 28&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -24,11 +30,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Denver</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Denver</h1>
+                    <p class="weather-card__degree">52&deg;</p>
+                  </div>
                   <p class="weather-card__time">9:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">52</p>
-                  <p class="weather-card__range">High: 52 Low: 34</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 52&deg; Low: 34&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -41,11 +53,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Tampa</h1>
+                    <p class="weather-card__degree">32&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Sunny</p>
-                  <p class="weather-card__degree">32</p>
-                  <p class="weather-card__range">High: 32 Low: 24</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Sunny</p>
+                    <p class="weather-card__range">
+                      High: 32&deg; Low: 24&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -58,11 +76,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Jacksonville</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Jacksonville</h1>
+                    <p class="weather-card__degree">32&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">32</p>
-                  <p class="weather-card__range">High: 36 Low: 21</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 36&deg; Low: 21&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -75,11 +99,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Denver</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Denver</h1>
+                    <p class="weather-card__degree">52&deg;</p>
+                  </div>
                   <p class="weather-card__time">9:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">52</p>
-                  <p class="weather-card__range">High: 52 Low: 34</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 52&deg; Low: 34&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -92,11 +122,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Tampa</h1>
+                    <p class="weather-card__degree">32&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">32</p>
-                  <p class="weather-card__range">High: 32 Low: 24</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 32&deg; Low: 24&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -109,11 +145,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Jacksonville</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Jacksonville</h1>
+                    <p class="weather-card__degree">34&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">34</p>
-                  <p class="weather-card__range">High: 36 Low: 21</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 36&deg; Low: 21&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -126,11 +168,17 @@
             <v-container>
               <v-row>
                 <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
+                  <div class="d-flex">
+                    <h1 class="weather-card__title">Tampa</h1>
+                    <p class="weather-card__degree">32&deg;</p>
+                  </div>
                   <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__degree">32</p>
-                  <p class="weather-card__range">High: 32 Low: 24</p>
+                  <div class="d-flex">
+                    <p class="weather-card__description">Mostly Cloudy</p>
+                    <p class="weather-card__range">
+                      High: 32&deg; Low: 24&deg;
+                    </p>
+                  </div>
                 </v-col>
               </v-row>
             </v-container>
@@ -235,7 +283,7 @@ export default {
     color: #ffffff;
   }
 }
-.v-card .no-bullets{
+.v-card .no-bullets {
   list-style: none;
 }
 </style>
