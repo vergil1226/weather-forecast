@@ -21,6 +21,7 @@
                 class="app__search"
               >
               </v-text-field>
+              <Snackbar />
             </v-card>
             <v-list-item v-for="item in items" :key="item.title" link>
               <v-list-item-icon>
@@ -41,6 +42,8 @@
 
 <script>
 import RecentList from './RecentList.vue';
+import SnackbarVue from './Snackbar.vue';
+
 export default {
   components: { RecentList },
   data() {
