@@ -1,5 +1,12 @@
 <template>
+  <v-container>
+    <v-row>
+      <v-col cols="3">
+        <Sidebar />
+        </v-col>
+        <v-col cols="9">
   <div class="mainview-weather">
+    <Mainview />
     <v-speed-dial
       direction="top"
       transition="slide-y-reverse"
@@ -17,11 +24,16 @@
     <TodayCard />
     <FiveDayForecastCards />
   </div>
+  </v-col>
+  </v-row>
+  </v-container>
 </template>
 
 <script>
 import TodayCard from "./TodayCard.vue";
 import FiveDayForecastCards from "./FiveDayForecastCards.vue";
+import Mainview from "./Mainview.vue";
+import Sidebar from "./Sidebar.vue";
 export default {};
 </script>
 

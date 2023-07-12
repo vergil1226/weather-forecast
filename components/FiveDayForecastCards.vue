@@ -100,6 +100,7 @@ export default {};
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    margin-right: 13px;
   }
 }
 </style>
