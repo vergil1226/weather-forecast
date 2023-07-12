@@ -13,6 +13,7 @@
             >
             </v-text-field>
           </v-card>
+          <RecentList />
           <v-list-item v-for="item in items" :key="item.title" link>
             <v-list-item-icon>
               <v-icon>{{ item.icon }}</v-icon>
@@ -24,6 +25,7 @@
         </v-list>
       </v-navigation-drawer>
     </v-card>
+    <Mainview />
   </v-app>
 </template>
 
@@ -31,6 +33,7 @@
 
 
 <script>
+import RecentList from './RecentList.vue';
 export default {
   data() {
     return {

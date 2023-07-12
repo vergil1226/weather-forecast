@@ -7,17 +7,14 @@
       right
       top
     >
-      <template>
-        <v-btn><v-icon>mdi-refresh</v-icon></v-btn>
-    
-    
-      </template>
-
+      <v-btn><v-icon>mdi-refresh</v-icon></v-btn>
     </v-speed-dial>
+    <FiveDayForecastCards />
   </div>
 </template>
 
 <script>
+import FiveDayForecastCards from './FiveDayForecastCards.vue';
 export default {};
 </script>
 

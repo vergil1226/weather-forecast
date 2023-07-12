@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <ul>
+  <div class="v-card">
+    <ul class="no-bullets">
       <li>
         <v-card>
           <v-card class="weather-card">
@@ -186,6 +186,9 @@ export default {
 
 <style lang="scss" scoped>
 .weather-card {
+  width: 346px;
+  height: 108px;
+  background-color: #104084;
   &__title {
     font-family: SF Pro Display;
     font-size: 22px;
@@ -231,5 +234,8 @@ export default {
     text-align: right;
     color: #ffffff;
   }
+}
+.v-card .no-bullets{
+  list-style: none;
 }
 </style>
