@@ -32,7 +32,22 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      forecast: {
+
+      }
+    }
+  },
+  methods: {
+    // const date1 = '2023-07-12';
+    // const date2 = '2023-07-12';
+    // const format = 'YYYY-MM-DD';
+    // const isSameDate = moment(date1, format).isSame(moment(date2, format));
+    // console.log(isSameDate);
+  },
+};
 </script>
 
 <style lang="scss" scoped>

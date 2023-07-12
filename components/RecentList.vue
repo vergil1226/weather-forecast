@@ -193,7 +193,12 @@
 export default {
   data() {
     return {
-      recentlocations: [
+      locationData: {
+      locationID: null,
+      id: null,
+      },
+      selected_location: [],
+      locations: [
         {
           City: "Tarpon Springs",
           State: "Florida",
@@ -237,7 +242,7 @@ export default {
       params: {
         q: 'Tampa, 3166',
         appid: ''
-      }
+      },
     })
     .then(response => {
 
