@@ -55,8 +55,8 @@ export default {
   color: #ffffff
 }
 .app__sidebar{
-  width: 346px;
-  height: 108px;
+  width: 375px;
+  height: 999px;
 }
 
 </style>

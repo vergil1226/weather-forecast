@@ -14,10 +14,14 @@
       <p class="mainview-weather__description">Mostly Sunny</p>
       <p class="mainview-weather__range">High: 34&deg; Low: 28&deg;</p>
     </v-speed-dial>
+    <TodayCard />
+    <FiveDayForecastCards />
   </div>
 </template>
 
 <script>
+import TodayCard from './TodayCard.vue';
+import FiveDayForecastCards from './FiveDayForecastCards.vue';
 export default {};
 </script>
 

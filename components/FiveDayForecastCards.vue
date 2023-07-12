@@ -3,7 +3,7 @@
     <v-card class="forecast-card" elevation="0">
       <v-container>
         <v-row>
-          <v-col cols="12">
+          <v-col cols="6">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
             <div class="d-flex">
               <p class="forecast-card-day">Monday</p>
@@ -34,7 +34,7 @@
     <v-card class="forecast-card" elevation="0">
       <v-container>
         <v-row>
-          <v-col cols="12">
+          <v-col cols="6">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
             <div class="d-flex">
               <p class="forecast-card-day">Monday</p>
