@@ -208,6 +208,7 @@ export default {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 3px;
   }
   &__time {
     font-family: SF Pro Display;
@@ -217,6 +218,7 @@ export default {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+    margin-bottom: 8px;
   }
   &__description {
     font-family: SF Pro Display;
