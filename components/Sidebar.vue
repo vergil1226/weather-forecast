@@ -14,11 +14,17 @@
             </v-text-field>
           </v-card>
           <v-card class="weather-card">
-            <h1 class="weather-card__title">Tarpon Springs</h1>
-            <p class="weather-card__time">11:22 AM</p>
-            <p class="weather-card__description">Mostly Sunny</p>
-            <p class="weather-card__degree">30</p>
-            <p class="weather-card__range">High: 34 Low: 28</p>
+            <v-container>
+              <v-row>
+                <v-col>
+                  <h1 class="weather-card__title">Tarpon Springs</h1>
+                  <p class="weather-card__time">11:22 AM</p>
+                  <p class="weather-card__description">Mostly Sunny</p>
+                  <p class="weather-card__degree">30</p>
+                  <p class="weather-card__range">High: 34 Low: 28</p>
+                </v-col>
+              </v-row>
+            </v-container>
           </v-card>
           <v-list-item v-for="item in items" :key="item.title" link>
             <v-list-item-icon>
@@ -58,51 +64,51 @@ export default {
 .white-placeholder {
   color: #ffffff;
 }
-.weather-card{
-  &__title{
+.weather-card {
+  &__title {
     font-family: SF Pro Display;
     font-size: 22px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  &__time{
+  &__time {
     font-family: SF Pro Display;
     font-size: 14px;
     font-weight: 500;
     line-height: 17px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  &__description{
+  &__description {
     font-family: SF Pro Display;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  &__degree{
+  &__degree {
     font-family: SF Pro Display;
     font-size: 50px;
     font-weight: 500;
     line-height: 60px;
     letter-spacing: 0em;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
   }
-  &__range{
+  &__range {
     font-family: SF Pro Display;
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
     text-align: right;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 }
 </style>
