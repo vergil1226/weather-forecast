@@ -1,4 +1,5 @@
 <template>
+  <!-- isSame function from moment (use current date and format Month and Day)-->
   <div>
 
   </div>

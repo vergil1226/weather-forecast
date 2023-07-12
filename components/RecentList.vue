@@ -22,6 +22,7 @@
               </v-row>
             </v-container>
           </v-card>
+          <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
         </v-card>
       </li>
       <li>
@@ -235,9 +236,6 @@ export default {
     };
   },
 }
-
-
-
 </script>
 
 <style lang="scss" scoped>
