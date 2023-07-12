@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <v-main>
     <v-card>
       <v-navigation-drawer class="app__sidebar" color="#104084" dark permanent>
         <v-list>
@@ -25,10 +26,9 @@
       </v-navigation-drawer>
     </v-card>
     <recent-list />
+    </v-main>
   </v-app>
 </template>
-
-
 
 
 <script>

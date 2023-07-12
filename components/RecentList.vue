@@ -3,7 +3,7 @@
     <ul class="no-bullets">
       <li>
         <v-card>
-          <v-card class="weather-card" elevation="0">
+          <v-card class="weather-card" elevation="0" @click="submit()">
             <v-container>
               <v-row>
                 <v-col cols="12">
@@ -228,8 +228,9 @@ export default {
         },
       ],
     };
-  },
   }
+}
+
 
 </script>
 
