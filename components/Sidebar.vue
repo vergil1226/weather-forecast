@@ -8,6 +8,7 @@
           <v-card class="app__card">
             <v-text-field
               v-model="searchQuery"
+              loading="isloading"
               prepend-inner-icon="mdi-map-marker-outline"
               placeholder="Add Location..."
               @keyup.enter="searchLocation"

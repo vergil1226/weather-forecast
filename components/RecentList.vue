@@ -141,9 +141,8 @@
     </ul>
   </div>
 </template>
-<!-- need to add mounted, methods, and computed-->
+<!-- need to add mounted, methods, and computed below-->
 <script>
-import moment from 'moment-timezone'
 export default {
   data() {
     return {
