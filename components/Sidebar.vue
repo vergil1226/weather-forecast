@@ -1,8 +1,8 @@
 <template>
-  <v-app class="sidebar">
+  <v-app>
     <v-main>
     <v-card>
-      <v-navigation-drawer class="app__sidebar" color="#104084" dark permanent>
+      <v-navigation-drawer class="app__sidebar" color="#104084" width="375px" dark permanent>
         <v-list>
           <v-card class="app__card">
             <v-text-field
@@ -50,8 +50,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.sidebar{
-  max-width: 375px;
-}
+
 
 </style>
