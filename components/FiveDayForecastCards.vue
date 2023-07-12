@@ -6,26 +6,26 @@
           <v-col cols="12">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
             <div class="d-flex">
-            <p class="forecast-card-day">Monday</p>
-            <v-icon>mdi-google-circles-extended</v-icon>
-            <p class="forecast-card__range">13</p>
-            <p class="forecast-card__range">10</p>
+              <p class="forecast-card-day">Monday</p>
+              <img src="/RainDrops.png" alt="" />
+              <p class="forecast-card__range">13</p>
+              <p class="forecast-card__range">10</p>
             </div>
           </v-col>
           <v-col cols="12">
             <div class="d-flex">
-            <p class="forecast-card-day">Tuesday</p>
-            <v-icon>mdi-weather-lightning</v-icon>
-            <p class="forecast-card__range">17</p>
-            <p class="forecast-card__range">12</p>
+              <p class="forecast-card-day">Tuesday</p>
+              <img src="/ThunderLightening.png" alt="" />
+              <p class="forecast-card__range">17</p>
+              <p class="forecast-card__range">12</p>
             </div>
           </v-col>
           <v-col cols="12">
             <div class="d-flex">
-            <p class="forecast-card-day">Wednesday</p>
-            <v-icon>mdi-weather-partly-cloudy</v-icon>
-            <p class="forecast-card__range">21</p>
-            <p class="forecast-card__range">18</p>
+              <p class="forecast-card-day">Wednesday</p>
+              <img src="/SunCloudRain.png" alt="" />
+              <p class="forecast-card__range">21</p>
+              <p class="forecast-card__range">18</p>
             </div>
           </v-col>
         </v-row>
@@ -37,27 +37,27 @@
           <v-col cols="12">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
             <div class="d-flex">
-            <p class="forecast-card-day">Monday</p>
-            <v-icon>mdi-google-circles-extended</v-icon>
-            <p class="forecast-card__range">13</p>
-            <p class="forecast-card__range">10</p>
+              <p class="forecast-card-day">Monday</p>
+              <img src="/RainDrops.png" alt="" />
+              <p class="forecast-card__range">13</p>
+              <p class="forecast-card__range">10</p>
             </div>
           </v-col>
           <v-col cols="12">
             <div class="d-flex">
-            <p class="forecast-card-day">Tuesday</p>
-            <v-icon>mdi-weather-lightning</v-icon>
-            <p class="forecast-card__range">17</p>
-            <p class="forecast-card__range">12</p>
+              <p class="forecast-card-day">Tuesday</p>
+              <img src="/ThunderLightening.png" alt="" />
+              <p class="forecast-card__range">17</p>
+              <p class="forecast-card__range">12</p>
             </div>
           </v-col>
           <v-col cols="12">
             <div class="d-flex">
-            <p class="forecast-card-day">Wednesday</p>
-            <v-icon>mdi-weather-partly-cloudy</v-icon>
-            <p class="forecast-card__range">21</p>
-            <p class="forecast-card__range">18</p>
-          </div>
+              <p class="forecast-card-day">Wednesday</p>
+              <img src="/SunCloudRain.png" alt="" />
+              <p class="forecast-card__range">21</p>
+              <p class="forecast-card__range">18</p>
+            </div>
           </v-col>
         </v-row>
       </v-container>

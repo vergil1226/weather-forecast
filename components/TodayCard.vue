@@ -15,9 +15,9 @@
               <p class="today-card-degrees">24 C</p>
             </div>
             <div class="d-flex">
-              <v-icon>mdi-weather-partly-cloudy</v-icon>
-              <v-icon>mdi-weather-partly-cloudy</v-icon>
-              <v-icon>mdi-weather-partly-cloudy</v-icon>
+              <img src="/TodaySunCloud.png" alt="">
+              <img src="/TodaySunCloud.png" alt="">
+              <img src="/TodaySunCloud.png" alt="">
             </div>
             <div class="d-flex">
               <p class="today-card-time">NOW</p>
