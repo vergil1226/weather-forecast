@@ -1,6 +1,6 @@
 <template>
   <div class="d-flex">
-    <v-card class="forecast-card">
+    <v-card class="forecast-card" elevation="0">
       <v-container>
         <v-row>
           <v-col cols="12">
@@ -31,7 +31,7 @@
         </v-row>
       </v-container>
     </v-card>
-    <v-card class="forecast-card">
+    <v-card class="forecast-card" elevation="0">
       <v-container>
         <v-row>
           <v-col cols="12">

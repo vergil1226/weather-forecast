@@ -7,7 +7,7 @@
       right
       top
     >
-      <v-btn><v-icon>mdi-refresh</v-icon></v-btn>
+      <v-btn elevation="0"><v-icon>mdi-refresh</v-icon></v-btn>
     </v-speed-dial>
     <FiveDayForecastCards />
   </div>
