@@ -10,9 +10,9 @@
               <p class="today-card-date">Mar, 9</p>
             </div>
             <div class="d-flex">
-              <p class="today-card-degrees">29 C</p>
-              <p class="today-card-degrees">26 C</p>
-              <p class="today-card-degrees">24 C</p>
+              <p class="today-card-degrees">29&deg;C</p>
+              <p class="today-card-degrees">26&deg;C</p>
+              <p class="today-card-degrees">24&deg;C</p>
             </div>
             <div class="d-flex">
               <img src="/TodaySunCloud.png" alt="">
@@ -20,9 +20,9 @@
               <img src="/TodaySunCloud.png" alt="">
             </div>
             <div class="d-flex">
-              <p class="today-card-time">NOW</p>
-              <p class="today-card-time">12PM</p>
-              <p class="today-card-time">1PM</p>
+              <p class="today-card__time">NOW</p>
+              <p class="today-card__time">12PM</p>
+              <p class="today-card__time">1PM</p>
             </div>
           </v-col>
         </v-row>
@@ -37,6 +37,9 @@ export default {};
 
 <style lang="scss" scoped>
 .today-card{
+  width: 940px;
+  height: 217px;
+  background-color: #001026;
   &__title{
     font-family: SF Pro Display;
     font-size: 20px;

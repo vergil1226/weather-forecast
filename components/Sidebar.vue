@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <v-card height="999" width="375" elevation="0">
       <v-navigation-drawer class="app__sidebar" color="#104084" dark permanent>
         <v-list>
           <v-card class="app__card">
@@ -24,7 +23,6 @@
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
-    </v-card>
     <Mainview />
   </v-app>
 </template>
@@ -54,5 +52,8 @@ export default {
 .white-placeholder {
   color: #ffffff;
 }
-
+.app__sidebar{
+  width: 375px;
+  height: 999px;
+}
 </style>
