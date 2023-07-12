@@ -18,6 +18,7 @@
                 prepend-inner-icon="mdi-map-marker-outline"
                 placeholder="Add Location..."
                 @keyup.enter="searchLocation"
+                class="app__search"
               >
               </v-text-field>
             </v-card>
@@ -64,4 +65,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.app__search{
+  max-width: 346px;
+}
 </style>

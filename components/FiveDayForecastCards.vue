@@ -61,7 +61,6 @@ export default {};
 .forecast-card {
   background-color: #5096ff;
   width: 455px;
-  height: 256px;
   &__title {
     font-family: SF Pro Display;
     font-size: 20px;
