@@ -60,7 +60,6 @@ export default {
   props: {
     width: {
       type: [Number, String],
-      default: undefined
     }
   },
   mounted() {

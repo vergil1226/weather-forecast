@@ -30,23 +30,7 @@
 
 <script>
   export default {}
-  //   data() {
-  //     return {
-  //       snackbar: []
-  //     }
-  //   };
 
-  //   function showSnackbar(message) {
-  //     var snackbar = document.getElementById("snackbar");
-  //     snackbar.innerText = message;
-  //     snackbar.style.display = "block"
-    
-  //   setTimeout(function () {
-  //     snackbar.style.display = "none";
-  //   }, 5*60* 1000)
-  //   }
-  //   showSnackbar("Error: Something went wrong!");
-  // }
 </script>
 
 <style lang="scss" scoped>

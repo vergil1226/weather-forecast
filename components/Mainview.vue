@@ -13,7 +13,7 @@
               top
               class="mainview-weather__refresh"
             >
-              <v-card-text style="height: 100px; position: relative">
+              <!-- <v-card-text style="height: 100px; position: relative">
                 <v-fab-transition>
                   <v-btn
                     v-show="!hidden"
@@ -29,7 +29,7 @@
                   >
                   </v-btn>
                 </v-fab-transition>
-              </v-card-text>
+              </v-card-text> -->
             </v-speed-dial>
           </v-card>
           <div class="mainview-weather__content">

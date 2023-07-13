@@ -39,7 +39,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">9:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p>  needed for the formatted time lifecycle hook?-->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Cloudly</p>
@@ -63,7 +62,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Sunny</p>
@@ -87,7 +85,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Cloudy</p>
@@ -111,7 +108,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">9:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Cloudly</p>
@@ -135,7 +131,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Sunny</p>
@@ -159,7 +154,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Cloudy</p>
@@ -183,7 +177,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Sunny</p>
