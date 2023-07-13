@@ -57,6 +57,12 @@ export default {
       searchQuery: '',
     };
   },
+  props: {
+    width: {
+      type: [Number, String],
+      default: undefined
+    }
+  },
   mounted() {
     this.getGeolocation();
   },
@@ -87,11 +93,9 @@ export default {
     //   // You can access the entered location via `this.searchQuery`
     //   console.log("Search query:", this.searchQuery);
     // },
-},
-computed: {
- 
 }
 }
+
 </script>
 
 <style lang="scss" scoped>

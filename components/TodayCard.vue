@@ -22,7 +22,7 @@
               <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
             </div>
             <div class="d-flex">
-              <p class="today-card__time">NOW</p>
+              <p class="today-card__time">Now</p>
               <p class="today-card__time">12PM</p>
               <p class="today-card__time">1PM</p>
             </div>
