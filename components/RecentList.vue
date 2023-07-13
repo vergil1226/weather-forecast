@@ -193,52 +193,8 @@
 <!-- need to add mounted, methods, and computed below-->
 <script>
 export default {
-  data() {
-    return {
-      locationData: {
-        locationID: null,
-        id: null,
-      },
-      selected_location: [],
-      locations: [
-        {
-          City: "Tarpon Springs",
-          State: "Florida",
-        },
-        {
-          City: "Denver",
-          State: "Colorado",
-        },
-        {
-          City: "Tampa",
-          State: "Florida",
-        },
-        {
-          City: "Jacksonville",
-          State: "Florida",
-        },
-        {
-          City: "Denver",
-          State: "Colorado",
-        },
-        {
-          City: "Tampa",
-          State: "Florida",
-        },
-        {
-          City: "Jacksonville",
-          State: "Florida",
-        },
-        {
-          City: "Tampa",
-          State: "Florida",
-        },
-      ],
-    };
-  },
-  methods() {},
-  computed() {},
-};
+  
+  }
 </script>
 
 <style lang="scss" scoped>

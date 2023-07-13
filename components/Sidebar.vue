@@ -55,6 +55,7 @@ export default {
   data() {
     return {
       searchQuery: '',
+      formattedTime: ''
     };
   },
   props: {
@@ -64,9 +65,20 @@ export default {
     }
   },
   mounted() {
-    this.getGeolocation();
+      this.refreshTime();
+      setInterval(this.refreshTime, 5 * 60 * 1000);
   },
-  methods: {
+    methods: {
+      refreshTime() {
+        // Get the current time for a specific location
+        const currentTime = moment().tz('America/New_York');
+        
+        // Format the time using Moment. js
+        const formattedTime = currentTime.format('YYYY-MM-DD HH:mm:ss')
+
+        this.formattedTime = formattedTime;
+      }
+    },
     async getGeolocation() {
       try {
         const { data } = await this.$axios.$get("/geolocation");
@@ -94,7 +106,7 @@ export default {
     //   console.log("Search query:", this.searchQuery);
     // },
 }
-}
+
 
 </script>
 
