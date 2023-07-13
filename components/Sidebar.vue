@@ -12,7 +12,7 @@
           permanent
         >
           <v-list>
-            <v-card class="app__card" elevation="0" @click="emit('someEvent')">
+            <v-card class="sidebar__card" color="#104084" elevation="0" @click="emit('someEvent')">
               <v-text-field
                 v-model="searchQuery"
                 loading="isloading"
@@ -22,6 +22,8 @@
                 class="app__search"
                 solo
                 rounded
+                max-width="346px"
+                color="#104084"
               >
               </v-text-field>
               <Snackbar />
@@ -95,6 +97,10 @@ computed: {
 <style lang="scss" scoped>
 .sidebar {
   max-width: 375px;
+  &__card{
+    padding-top: 30px;
+    padding-bottom: 27px;
+  }
 }
 
 </style>

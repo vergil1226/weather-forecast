@@ -1,4 +1,5 @@
 <template>
+  <!-- need to hide the snackbar-->
   <section class="Snackbar" elevation="0">
     <v-btn
       dark
@@ -34,5 +35,9 @@
 </script>
 
 <style lang="scss" scoped>
+.Snackbar {
+  max-width: 346px;
+  padding: 14px 57px 0 0;
+}
 
 </style>
