@@ -12,10 +12,10 @@
         >
           <v-list>
             <v-card class="app__card">
+              <div v-if="item.clicked">
               <v-text-field
                 v-model="searchQuery"
                 loading="isloading"
-                v-model="searchLocation"
                 prepend-inner-icon="mdi-map-marker-outline"
                 placeholder="Add Location..."
                 @keyup.enter="searchLocation"
@@ -24,6 +24,7 @@
                 rounded
               >
               </v-text-field>
+              </div>
               <Snackbar />
             </v-card>
             <v-list-item v-for="item in items" :key="item.title" link>
@@ -51,21 +52,42 @@ export default {
   components: { RecentList },
   data() {
     return {
-      searchQuery: "",
+      searchQuery: '',
     };
   },
+  mounted() {
+    this.getGeolocation();
+  },
   methods: {
-    searchLocation() {
-      // Here you can perform the search logic for the entered location
-      // You can access the entered location via `this.searchQuery`
-      console.log("Search query:", this.searchQuery);
+    async getGeolocation() {
+      try {
+        const { data } = await this.$axios.$get("/geolocation");
+
+        const response = this.$normalize(data);
+
+        this.geolocation = response.map((item) => ({
+          ...item,
+          clicked: item.located,
+        }));
+      } catch (error) {
+        console.log(error);
+      }
     },
-//     {
-//       setTimeout(() => {
-//         location.reload();
-//       }, 5 * 60 * 1000)
-//     }
-// }
+    moveCard(item) {
+      item.clicked = !item.clicked;
+      setTimeout(() => {
+      item.located = !item.located;
+      this.mapToDatabase(item);
+      }, 5*60* 1000);
+    }
+    // searchLocation() {
+    //   // Here you can perform the search logic for the entered location
+    //   // You can access the entered location via `this.searchQuery`
+    //   console.log("Search query:", this.searchQuery);
+    // },
+},
+computed: {
+  
 }
 }
 </script>
