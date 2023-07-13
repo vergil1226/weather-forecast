@@ -1,9 +1,9 @@
 import { getField, updateField } from 'vuex-map-fields'
 
 export const state = () => ({
-    city: '',
-    countryCode: '',
-    weatherData: null,
+    weather: null,
+    loading: false,
+    error: null,
 })
 
 export const getters = {
@@ -13,5 +13,3 @@ export const getters = {
 export const mutations = {
     updateField,
   }
-
-
