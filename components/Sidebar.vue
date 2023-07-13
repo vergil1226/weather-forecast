@@ -15,10 +15,13 @@
               <v-text-field
                 v-model="searchQuery"
                 loading="isloading"
+                v-model="searchLocation"
                 prepend-inner-icon="mdi-map-marker-outline"
                 placeholder="Add Location..."
                 @keyup.enter="searchLocation"
                 class="app__search"
+                solo
+                rounded
               >
               </v-text-field>
               <Snackbar />
