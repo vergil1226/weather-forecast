@@ -54,13 +54,7 @@ export default {
 
 <style lang="scss" scoped>
 .today-card {
-  background: radial-gradient(
-        77.25% 77.25% at 69.89% 22.75%,
-        #5096ff 0%,
-        #0044ab 100%
-      )
-      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-    linear-gradient(0deg, #001026, #001026);
+  background: rgb(0,68,171);
   max-width: 940px;
   border-radius: 20px;
   margin-left: 30.5px;
