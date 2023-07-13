@@ -1,8 +1,9 @@
 <template>
-  <section class="mainview-weather" width="1001px" elevation="0">
+  <section class="mainview-weather" elevation="0">
     <v-container>
       <v-row>
         <v-col cols="12">
+          <v-card elevation="0">
           <v-speed-dial
             direction="top"
             transition="slide-y-reverse"
@@ -13,19 +14,23 @@
           >
             <v-btn elevation="0"><v-icon>mdi-refresh</v-icon></v-btn>
           </v-speed-dial>
-        </v-col>
-        <v-col cols="12">
+          </v-card>
           <div class="mainview-weather__content">
         <img src="/Suncloud.png" class="mainview-weather__graphic" alt="" />
         <h1 class="mainview-weather__title">Tarpon Springs</h1>
         <p class="mainview-weather__degree">30&deg;</p>
         <!--- have to put description and range together-->
+        <!--- check sass variables for vuetify components-->
         <p class="mainview-weather__description">Mostly Sunny</p>
         <p class="mainview-weather__range">High: 34&deg; Low: 28&deg;</p>
         </div>
         </v-col>
-        <!-- <TodayCard />
-    <FiveDayForecastCards /> -->
+        <v-col cols="12">
+          <TodayCard />
+        </v-col>
+        <v-col cols="12">
+          <FiveDayForecastCards />
+        </v-col>
       </v-row>
     </v-container>
   </section>
@@ -41,7 +46,8 @@ export default {};
 .mainview-weather {
   background: radial-gradient(77.25% 77.25% at 69.89% 22.75%, #5096FF 0%, #0044AB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
   linear-gradient(0deg, #15488A, #15488A);
-  max-width: 1001px;
+  width: 1001px;
+  height: 999px;
   &__title {
     font-family: SF Pro Display;
     font-size: 31px;

@@ -19,7 +19,7 @@
           </v-card>
           <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
       </li>
-      <li>
+      <!-- <li>
         <v-card>
           <v-card class="weather-card" elevation="0">
             <v-container>
@@ -137,7 +137,7 @@
             </v-container>
           </v-card>
         </v-card>
-      </li>
+      </li> -->
     </ul>
   </section>
 </template>
