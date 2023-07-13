@@ -1,29 +1,28 @@
 <template>
   <section class="mainview-weather" elevation="0">
+    <!-- check sass variables for vuetify components -->
     <v-container>
       <v-row>
         <v-col cols="12">
           <v-card elevation="0">
-          <v-speed-dial
-            direction="top"
-            transition="slide-y-reverse"
-            absolute
-            right
-            top
-            class="mainview-weather__refresh"
-          >
-            <v-btn elevation="0"><v-icon>mdi-refresh</v-icon></v-btn>
-          </v-speed-dial>
+            <v-speed-dial
+              direction="top"
+              transition="slide-y-reverse"
+              absolute
+              right
+              top
+              class="mainview-weather__refresh"
+            >
+              <v-btn elevation="0"><v-icon>mdi-refresh</v-icon></v-btn>
+            </v-speed-dial>
           </v-card>
           <div class="mainview-weather__content">
-        <img src="/Suncloud.png" class="mainview-weather__graphic" alt="" />
-        <h1 class="mainview-weather__title">Tarpon Springs</h1>
-        <p class="mainview-weather__degree">30&deg;</p>
-        <!--- have to put description and range together-->
-        <!--- check sass variables for vuetify components-->
-        <p class="mainview-weather__description">Mostly Sunny</p>
-        <p class="mainview-weather__range">High: 34&deg; Low: 28&deg;</p>
-        </div>
+            <img src="/Suncloud.png" class="mainview-weather__graphic" alt="" />
+            <h1 class="mainview-weather__title">Tarpon Springs</h1>
+            <p class="mainview-weather__degree">30&deg;</p>
+            <p class="mainview-weather__description">Mostly Sunny</p>
+            <p class="mainview-weather__range">High: 34&deg; Low: 28&deg;</p>
+          </div>
         </v-col>
         <v-col cols="12">
           <TodayCard />
@@ -40,14 +39,19 @@
 import TodayCard from "./TodayCard.vue";
 import FiveDayForecastCards from "./FiveDayForecastCards.vue";
 export default {
-  components: {TodayCard, FiveDayForecastCards}
+  components: { TodayCard, FiveDayForecastCards },
 };
 </script>
 
 <style lang="scss" scoped>
 .mainview-weather {
-  background: radial-gradient(77.25% 77.25% at 69.89% 22.75%, #5096FF 0%, #0044AB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-  linear-gradient(0deg, #15488A, #15488A);
+  background: radial-gradient(
+        77.25% 77.25% at 69.89% 22.75%,
+        #5096ff 0%,
+        #0044ab 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, #15488a, #15488a);
   width: 1001px;
   height: 999px;
   &__title {
@@ -86,7 +90,7 @@ export default {
     text-align: center;
     color: #ffffff;
   }
-  &__graphic{
+  &__graphic {
     display: flex;
     justify-content: center;
     margin: auto;
