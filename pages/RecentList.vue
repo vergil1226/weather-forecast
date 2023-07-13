@@ -1,13 +1,13 @@
 <template>
   <div>
-  <RecentList />
+  <FiveDayForecastCards />
   </div>
 </template>
 
 <script>
-import RecentList from '../components/RecentList.vue';
+import FiveDayForecastCards from '../components/FiveDayForecastCards.vue';
   export default {
-    components: { RecentList},
+    components: { FiveDayForecastCards},
     name: 'RecentListPage'
   }
 </script>

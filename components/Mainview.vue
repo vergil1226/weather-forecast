@@ -1,5 +1,5 @@
 <template>
-  <section class="mainview-weather" elevation="0">
+  <section class="mainview-weather" width="1001px" elevation="0">
     <v-speed-dial
       direction="top"
       transition="slide-y-reverse"
@@ -14,8 +14,8 @@
       <p class="mainview-weather__description">Mostly Sunny</p>
       <p class="mainview-weather__range">High: 34&deg; Low: 28&deg;</p>
     </v-speed-dial>
-    <TodayCard />
-    <FiveDayForecastCards />
+    <!-- <TodayCard />
+    <FiveDayForecastCards /> -->
   </section>
 </template>
 

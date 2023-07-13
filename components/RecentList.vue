@@ -1,9 +1,10 @@
 <template>
   <section class="recent" elevation="0">
     <ul class="no-bullets">
-      <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
+      <li class="weather-card-list" v-for="(list, idx) in lists" :key="idx + '_lists'">
+          <v-card class="weather-card" elevation="0" v-for="(item, idx) in list.items"
+              :key="idx + '_item'"
+              color="#2566A3">
             <v-container>
               <v-row>
                 <v-col cols="12">
@@ -17,7 +18,6 @@
             </v-container>
           </v-card>
           <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
-        </v-card>
       </li>
       <li>
         <v-card>
@@ -188,7 +188,7 @@ export default {
     };
   },
   methods() {
-
+    
   },
   computed() {
 
@@ -199,7 +199,8 @@ export default {
 <style lang="scss" scoped>
 .weather-card {
   max-width: 346px;
-  background-color: #104084;
+  border-radius: 20px;
+  background: #2566A333;
   &__title {
     font-family: SF Pro Display;
     font-size: 22px;

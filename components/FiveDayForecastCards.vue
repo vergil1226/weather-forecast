@@ -1,51 +1,75 @@
 <template>
   <section class="d-flex" elevation="0">
-    <v-card class="forecast-card" elevation="0">
+    <v-card class="forecast-card" elevation="0" mb-4>
       <v-container>
-        <v-row>
+        <v-row no-gutters>
           <v-col cols="6">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
-            <p class="forecast-card-day">Monday</p>
-            <img src="/RainDrops.png" alt="" />
-            <p class="forecast-card__range">13&deg;C</p>
-            <p class="forecast-card__range">10&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Monday</p>
+              <img src="/RainDrops.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">13&deg;C</p>
+                <p class="forecast-card__range">10&deg;C</p>
+              </div>
+            </div>
           </v-col>
           <v-col cols="12">
-            <p class="forecast-card-day">Tuesday</p>
-            <img src="/ThunderLightening.png" alt="" />
-            <p class="forecast-card__range">17&deg;C</p>
-            <p class="forecast-card__range">12&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Tuesday</p>
+              <img src="/ThunderLightening.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">17&deg;C</p>
+                <p class="forecast-card__range">12&deg;C</p>
+              </div>
+            </div>
           </v-col>
           <v-col cols="12">
-            <p class="forecast-card-day">Wednesday</p>
-            <img src="/SunCloudRain.png" alt="" />
-            <p class="forecast-card__range">21&deg;C</p>
-            <p class="forecast-card__range">18&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Wednesday</p>
+              <img src="/SunCloudRain.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">21&deg;C</p>
+                <p class="forecast-card__range">18&deg;C</p>
+              </div>
+            </div>
           </v-col>
         </v-row>
       </v-container>
     </v-card>
-    <v-card class="forecast-card" elevation="0">
+    <v-card class="forecast-card" elevation="0" mb-4>
       <v-container>
-        <v-row>
+        <v-row no-gutters>
           <v-col cols="6">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
-            <p class="forecast-card-day">Monday</p>
-            <img src="/RainDrops.png" alt="" />
-            <p class="forecast-card__range">13&deg;C</p>
-            <p class="forecast-card__range">10&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Monday</p>
+              <img src="/RainDrops.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">13&deg;C</p>
+                <p class="forecast-card__range">10&deg;C</p>
+              </div>
+            </div>
           </v-col>
           <v-col cols="12">
-            <p class="forecast-card-day">Tuesday</p>
-            <img src="/ThunderLightening.png" alt="" />
-            <p class="forecast-card__range">17&deg;C</p>
-            <p class="forecast-card__range">12&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Tuesday</p>
+              <img src="/ThunderLightening.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">17&deg;C</p>
+                <p class="forecast-card__range">12&deg;C</p>
+              </div>
+            </div>
           </v-col>
           <v-col cols="12">
-            <p class="forecast-card-day">Wednesday</p>
-            <img src="/SunCloudRain.png" alt="" />
-            <p class="forecast-card__range">21&deg;C</p>
-            <p class="forecast-card__range">18&deg;C</p>
+            <div class="d-flex">
+              <p class="forecast-card-day">Wednesday</p>
+              <img src="/SunCloudRain.png" alt="" />
+              <div class="d-flex">
+                <p class="forecast-card__range">21&deg;C</p>
+                <p class="forecast-card__range">18&deg;C</p>
+              </div>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -59,8 +83,12 @@ export default {};
 
 <style lang="scss" scoped>
 .forecast-card {
-  background-color: #5096ff;
+  background: radial-gradient(77.25% 77.25% at 69.89% 22.75%, #5096FF 0%, #0044AB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+  linear-gradient(0deg, #001026, #001026);
   width: 455px;
+  border-radius: 20px;
+  margin-right: 31px;
+  margin-top: 42px;
   &__title {
     font-family: SF Pro Display;
     font-size: 20px;
@@ -69,6 +97,7 @@ export default {};
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+    padding-bottom: 17px;
   }
   &__day {
     font-family: Alegreya Sans;
