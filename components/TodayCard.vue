@@ -1,29 +1,31 @@
 <template>
   <!-- only have to do a 3 hr forecast so stop after 3 hourly / forecast section here in doc-->
   <section class="today">
-    <v-card class="today__card" elevation="0">
+    <v-card class="today-card" elevation="0">
       <v-container>
         <v-row no-gutters>
-          <v-col cols="12">
-            <div class="d-flex">
+          <v-col cols="6">
               <h2 class="today-card__title">Today</h2>
-              <p class="today-card-date">Mar, 9</p>
+              </v-col>
+              <v-col cols="6">
+              <p class="today-card__date">Mar, 9</p>
+          </v-col>
+          <v-col cols="4">
+            <div class="d-flex">
+              <p class="today-card__degrees">29&deg;C</p>
+              <p class="today-card__degrees">26&deg;C</p>
+              <p class="today-card__degrees">24&deg;C</p>
             </div>
-          <div class="d-flex">
-            <p class="today-card-degrees">29&deg;C</p>
-            <p class="today-card-degrees">26&deg;C</p>
-            <p class="today-card-degrees">24&deg;C</p>
-          </div>
-          <div class="d-flex">
-            <img src="/TodaySunCloud.png" alt="" />
-            <img src="/TodaySunCloud.png" alt="" />
-            <img src="/TodaySunCloud.png" alt="" />
-          </div>
-          <div class="d-flex">
-            <p class="today-card__time">NOW</p>
-            <p class="today-card__time">12PM</p>
-            <p class="today-card__time">1PM</p>
-          </div>
+            <div class="d-flex">
+              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
+              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
+              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
+            </div>
+            <div class="d-flex">
+              <p class="today-card__time">NOW</p>
+              <p class="today-card__time">12PM</p>
+              <p class="today-card__time">1PM</p>
+            </div>
           </v-col>
         </v-row>
       </v-container>
@@ -32,7 +34,7 @@
 </template>
 
 <script>
-import FiveDayForecastCards from './FiveDayForecastCards.vue';
+import FiveDayForecastCards from "./FiveDayForecastCards.vue";
 export default {
   data() {
     return {
@@ -51,7 +53,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.today__card {
+.today-card {
   background: radial-gradient(
         77.25% 77.25% at 69.89% 22.75%,
         #5096ff 0%,
@@ -61,6 +63,7 @@ export default {
     linear-gradient(0deg, #001026, #001026);
   max-width: 940px;
   border-radius: 20px;
+  margin-left: 30.5px;
   &__title {
     font-family: SF Pro Display;
     font-size: 20px;
@@ -97,8 +100,12 @@ export default {
     text-align: center;
     color: #ffffff;
   }
+  &__graphic{
+    height: 50px;
+    width: 50px;
+  }
 }
 .d-flex {
-  flex-direction: space-between;
+  justify-content: space-between;
 }
 </style>
