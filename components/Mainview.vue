@@ -13,7 +13,23 @@
               top
               class="mainview-weather__refresh"
             >
-              <v-btn elevation="0"><v-icon>mdi-refresh</v-icon></v-btn>
+              <v-card-text style="height: 100px; position: relative">
+                <v-fab-transition>
+                  <v-btn
+                    v-show="!hidden"
+                    color="white"
+                    dark
+                    absolute
+                    top
+                    right
+                    float
+                    fab
+                    elevation="0"
+                    v-icon="mdi - refresh"
+                  >
+                  </v-btn>
+                </v-fab-transition>
+              </v-card-text>
             </v-speed-dial>
           </v-card>
           <div class="mainview-weather__content">
