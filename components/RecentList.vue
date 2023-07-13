@@ -1,5 +1,5 @@
 <template>
-  <div class="v-card">
+  <section class="recent" elevation="0">
     <ul class="no-bullets">
       <li>
         <v-card>
@@ -139,7 +139,7 @@
         </v-card>
       </li>
     </ul>
-  </div>
+  </section>
 </template>
 <!-- need to add mounted, methods, and computed below-->
 <script>
@@ -248,7 +248,7 @@ export default {
     color: #ffffff;
   }
 }
-.v-card .no-bullets {
+.recent .no-bullets {
   list-style: none;
 }
 </style>

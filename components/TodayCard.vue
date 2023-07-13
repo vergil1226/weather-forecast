@@ -1,6 +1,6 @@
 <template>
   <!-- only have to do a 3 hr forecast so stop after 3 hourly / forecast section here in doc-->
-  <div>
+  <section class="today">
     <v-card class="today-card" elevation="0">
       <v-container>
         <v-row>
@@ -28,7 +28,7 @@
         </v-row>
       </v-container>
     </v-card>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -54,9 +54,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.today-card{
+.today{
   max-width: 940px;
   background-color: #001026;
+}
+.today-card{
   &__title{
     font-family: SF Pro Display;
     font-size: 20px;

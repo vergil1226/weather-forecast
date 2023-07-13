@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <section class="d-flex" elevation="0">
     <v-card class="forecast-card" elevation="0">
       <v-container>
         <v-row>
@@ -50,7 +50,7 @@
         </v-row>
       </v-container>
     </v-card>
-  </div>
+  </section>
 </template>
 
 <script>

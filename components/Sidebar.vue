@@ -1,6 +1,6 @@
 <template>
   <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook - need to update the timeout method-->
-  <section class="sidebar" elevation="0">
+  <section class="sidebar" elevation="0" style="height: 100%;">
   <v-app>
     <v-main>
       <v-card elevation="0">
@@ -12,8 +12,7 @@
           permanent
         >
           <v-list>
-            <v-card class="app__card" elevation="0">
-              <div v-if="item.clicked">
+            <v-card class="app__card" elevation="0" @click="emit('someEvent')">
               <v-text-field
                 v-model="searchQuery"
                 loading="isloading"
@@ -25,7 +24,6 @@
                 rounded
               >
               </v-text-field>
-              </div>
               <Snackbar />
             </v-card>
             <v-list-item v-for="item in items" :key="item.title" link>

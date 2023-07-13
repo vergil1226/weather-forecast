@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="Snackbar" elevation="0">
     <v-btn
       dark
       @click="snackbar = true"
@@ -24,7 +24,7 @@
         </v-btn>
       </template>
     </v-snackbar>
-  </div>
+  </section>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mainview-weather">
+  <section class="mainview-weather" elevation="0">
     <v-speed-dial
       direction="top"
       transition="slide-y-reverse"
@@ -16,7 +16,7 @@
     </v-speed-dial>
     <TodayCard />
     <FiveDayForecastCards />
-  </div>
+  </section>
 </template>
 
 <script>
