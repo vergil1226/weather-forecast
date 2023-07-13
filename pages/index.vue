@@ -1,6 +1,5 @@
 <template>
   <v-app>
-    <sidebar />
     <v-main>
       <Mainview />
       <Nuxt />
@@ -12,11 +11,10 @@
 <script>
 import Vue from 'vue'
 import VTooltip from 'v-tooltip'
-import Sidebar from '../components/Sidebar.vue'
 import Mainview from '../components/Mainview.vue'
 
 export default {
-  components: { Sidebar, Mainview},
+  components: { Vue, Mainview},
   name: 'IndexPage'
 }
 </script>

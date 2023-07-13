@@ -39,7 +39,9 @@
 <script>
 import TodayCard from "./TodayCard.vue";
 import FiveDayForecastCards from "./FiveDayForecastCards.vue";
-export default {};
+export default {
+  components: {TodayCard, FiveDayForecastCards}
+};
 </script>
 
 <style lang="scss" scoped>

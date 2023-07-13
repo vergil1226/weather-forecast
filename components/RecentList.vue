@@ -1,143 +1,192 @@
 <template>
   <section class="recent" elevation="0">
     <ul class="no-bullets">
-      <li class="weather-card-list" v-for="(list, idx) in lists" :key="idx + '_lists'">
-          <v-card class="weather-card" elevation="0" v-for="(item, idx) in list.items"
-              :key="idx + '_item'"
-              color="#2566A3">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Tarpon Springs</h1>
-                  <p class="weather-card__degree">30&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Sunny</p>
-                  <p class="weather-card__range">High: 34&deg; Low: 28&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
-          <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
+      <li>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Tarpon Springs</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">30&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Sunny</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 34&deg; Low: 28&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card>
+
+        <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
       </li>
-      <!-- <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Denver</h1>
-                  <p class="weather-card__degree">52&deg;</p>
-                  <p class="weather-card__time">9:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 52&deg; Low: 34&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+      <li>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Denver</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">52&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">9:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Cloudly</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 52&deg; Low: 34&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
-                  <p class="weather-card__degree">32&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Sunny</p>
-                  <p class="weather-card__range">High: 32&deg; Low: 24&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Tampa</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">32&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Sunny</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Jacksonville</h1>
-                  <p class="weather-card__degree">32&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 36&deg; Low: 21&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Jacksonville</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">32&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Cloudy</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 36&deg; Low: 21&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Denver</h1>
-                  <p class="weather-card__degree">52&deg;</p>
-                  <p class="weather-card__time">9:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 52&deg; Low: 34&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Denver</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">52&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">9:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Cloudly</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 52&deg; Low: 34&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
-                  <p class="weather-card__degree">32&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 32&deg; Low: 24&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Tampa</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">32&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Sunny</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Jacksonville</h1>
-                  <p class="weather-card__degree">34&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 36&deg; Low: 21&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Jacksonville</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">32&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Cloudy</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 36&deg; Low: 21&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
       </li>
       <li>
-        <v-card>
-          <v-card class="weather-card" elevation="0">
-            <v-container>
-              <v-row>
-                <v-col cols="12">
-                  <h1 class="weather-card__title">Tampa</h1>
-                  <p class="weather-card__degree">32&deg;</p>
-                  <p class="weather-card__time">11:22 AM</p>
-                  <p class="weather-card__description">Mostly Cloudy</p>
-                  <p class="weather-card__range">High: 32&deg; Low: 24&deg;</p>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-card>
+        <v-card class="recent-card" background="#2566A3A6;">
+          <v-container>
+            <v-row no-gutters>
+              <v-col cols="6">
+                <h1 class="recent-card__title">Tampa</h1>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__degree">32&deg;</p>
+              </v-col>
+              <v-col cols="12">
+                <p class="recent-card__time">11:22 AM</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__description">Mostly Sunny</p>
+              </v-col>
+              <v-col cols="6">
+                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
+              </v-col>
+            </v-row>
+          </v-container>
         </v-card>
-      </li> -->
+      </li>
     </ul>
   </section>
 </template>
@@ -187,20 +236,16 @@ export default {
       ],
     };
   },
-  methods() {
-    
-  },
-  computed() {
-
-  },
+  methods() {},
+  computed() {},
 };
 </script>
 
 <style lang="scss" scoped>
-.weather-card {
+.recent-card {
   max-width: 346px;
   border-radius: 20px;
-  background: #2566A333;
+  background: #2566a333;
   &__title {
     font-family: SF Pro Display;
     font-size: 22px;
