@@ -11,8 +11,8 @@
               <p class="forecast-card-day">Monday</p>
               <img src="/RainDrops.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">13&deg;C</p>
-                <p class="forecast-card__range">10&deg;C</p>
+                <p class="forecast-card__range">13&deg;c</p>
+                <p class="forecast-card__range">10&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -21,8 +21,8 @@
               <p class="forecast-card-day">Tuesday</p>
               <img src="/ThunderLightening.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">17&deg;C</p>
-                <p class="forecast-card__range">12&deg;C</p>
+                <p class="forecast-card__range">17&deg;c</p>
+                <p class="forecast-card__range">12&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -31,8 +31,8 @@
               <p class="forecast-card-day">Wednesday</p>
               <img src="/SunCloudRain.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">21&deg;C</p>
-                <p class="forecast-card__range">18&deg;C</p>
+                <p class="forecast-card__range">21&deg;c</p>
+                <p class="forecast-card__range">18&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -51,8 +51,8 @@
               <p class="forecast-card-day">Monday</p>
               <img src="/RainDrops.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">13&deg;C</p>
-                <p class="forecast-card__range">10&deg;C</p>
+                <p class="forecast-card__range">13&deg;c</p>
+                <p class="forecast-card__range">10&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -61,8 +61,8 @@
               <p class="forecast-card-day">Tuesday</p>
               <img src="/ThunderLightening.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">17&deg;C</p>
-                <p class="forecast-card__range">12&deg;C</p>
+                <p class="forecast-card__range">17&deg;c</p>
+                <p class="forecast-card__range">12&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -71,8 +71,8 @@
               <p class="forecast-card-day">Wednesday</p>
               <img src="/SunCloudRain.png" alt="" />
               <div class="d-flex">
-                <p class="forecast-card__range">21&deg;C</p>
-                <p class="forecast-card__range">18&deg;C</p>
+                <p class="forecast-card__range">21&deg;c</p>
+                <p class="forecast-card__range">18&deg;c</p>
               </div>
             </div>
           </v-col>
@@ -114,7 +114,7 @@ export default {};
   }
   &__range {
     font-family: Alegreya Sans;
-    font-size: 18px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;

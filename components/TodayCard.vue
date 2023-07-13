@@ -10,7 +10,7 @@
               <v-col cols="6">
               <p class="today-card__date">Mar, 9</p>
           </v-col>
-          <v-col cols="4">
+          <v-col cols="3">
             <div class="d-flex">
               <p class="today-card__degrees">29&deg;C</p>
               <p class="today-card__degrees">26&deg;C</p>
@@ -42,11 +42,6 @@ export default {
     };
   },
   methods: {
-    // const date1 = '2023-07-12';
-    // const date2 = '2023-07-12';
-    // const format = 'YYYY-MM-DD';
-    // const isSameDate = moment(date1, format).isSame(moment(date2, format));
-    // console.log(isSameDate);
   },
   computed() {},
 };
