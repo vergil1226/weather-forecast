@@ -1,8 +1,9 @@
 <template>
   <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook - need to update the timeout method-->
+  <section class="sidebar" elevation="0">
   <v-app>
     <v-main>
-      <v-card>
+      <v-card elevation="0">
         <v-navigation-drawer
           class="app__sidebar"
           color="#104084"
@@ -11,7 +12,7 @@
           permanent
         >
           <v-list>
-            <v-card class="app__card">
+            <v-card class="app__card" elevation="0">
               <div v-if="item.clicked">
               <v-text-field
                 v-model="searchQuery"
@@ -41,6 +42,7 @@
       <recent-list />
     </v-main>
   </v-app>
+  </section>
 </template>
 
 
