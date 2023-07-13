@@ -87,7 +87,7 @@ export default {
     // },
 },
 computed: {
-  ...mapFields(["loading"])
+ 
 }
 }
 </script>
