@@ -1,10 +1,12 @@
 <template>
-  <section class="d-flex" elevation="0">
+  <section class="forecast d-flex" elevation="0">
     <v-card class="forecast-card" elevation="0" mb-4>
       <v-container>
         <v-row no-gutters>
           <v-col cols="6">
             <h2 class="forecast-card__title">5-Day Forecast</h2>
+          </v-col>
+          <v-col cols="12">
             <div class="d-flex">
               <p class="forecast-card-day">Monday</p>
               <img src="/RainDrops.png" alt="" />
@@ -37,43 +39,7 @@
         </v-row>
       </v-container>
     </v-card>
-    <v-card class="forecast-card" elevation="0" mb-4>
-      <v-container>
-        <v-row no-gutters>
-          <v-col cols="6">
-            <h2 class="forecast-card__title">5-Day Forecast</h2>
-            <div class="d-flex">
-              <p class="forecast-card-day">Monday</p>
-              <img src="/RainDrops.png" alt="" />
-              <div class="d-flex">
-                <p class="forecast-card__range">13&deg;C</p>
-                <p class="forecast-card__range">10&deg;C</p>
-              </div>
-            </div>
-          </v-col>
-          <v-col cols="12">
-            <div class="d-flex">
-              <p class="forecast-card-day">Tuesday</p>
-              <img src="/ThunderLightening.png" alt="" />
-              <div class="d-flex">
-                <p class="forecast-card__range">17&deg;C</p>
-                <p class="forecast-card__range">12&deg;C</p>
-              </div>
-            </div>
-          </v-col>
-          <v-col cols="12">
-            <div class="d-flex">
-              <p class="forecast-card-day">Wednesday</p>
-              <img src="/SunCloudRain.png" alt="" />
-              <div class="d-flex">
-                <p class="forecast-card__range">21&deg;C</p>
-                <p class="forecast-card__range">18&deg;C</p>
-              </div>
-            </div>
-          </v-col>
-        </v-row>
-      </v-container>
-    </v-card>
+    <!-- use v-for loop to make identical card-->
   </section>
 </template>
 
@@ -83,12 +49,17 @@ export default {};
 
 <style lang="scss" scoped>
 .forecast-card {
-  background: radial-gradient(77.25% 77.25% at 69.89% 22.75%, #5096FF 0%, #0044AB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-  linear-gradient(0deg, #001026, #001026);
+  background: radial-gradient(
+        77.25% 77.25% at 69.89% 22.75%,
+        #5096ff 0%,
+        #0044ab 100%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(0deg, #001026, #001026);
   width: 455px;
   border-radius: 20px;
-  margin-right: 31px;
   margin-top: 42px;
+  margin-left: 31px;
   &__title {
     font-family: SF Pro Display;
     font-size: 20px;
@@ -118,5 +89,8 @@ export default {};
     color: #ffffff;
     margin-right: 13px;
   }
+}
+.d-flex {
+  justify-content: space-between;
 }
 </style>
