@@ -27,6 +27,8 @@ export default {};
 
 <style lang="scss" scoped>
 .mainview-weather{
+  background: #5096FF;
+  max-width: 1001px;
   &__title{
     font-family: SF Pro Display;
     font-size: 31px;

@@ -1,6 +1,6 @@
 <template>
   <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook - need to update the timeout method-->
-  <section class="sidebar" elevation="0" style="height: 100%;">
+  <section class="sidebar" float elevation="0" style="height: 100%;">
   <v-app>
     <v-main>
       <v-card elevation="0">
@@ -93,7 +93,8 @@ computed: {
 </script>
 
 <style lang="scss" scoped>
-.app__search{
-  max-width: 346px;
+.sidebar {
+  max-width: 375px;
 }
+
 </style>
