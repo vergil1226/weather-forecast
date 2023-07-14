@@ -80,7 +80,7 @@ export default {
   &__card{
     padding-top: 30px;
     padding-bottom: 27px;
+    box-sizing: border-box;
   }
 }
-
 </style>
