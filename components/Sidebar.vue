@@ -1,6 +1,6 @@
 <template>
   <!--- set to refresh every 5 minutes use built in js interval in the mounted lifecycle hook - need to update the timeout method-->
-  <section class="sidebar" float elevation="0" style="height: 100%;">
+  <section class="sidebar" float elevation="0">
   <v-app>
     <v-main>
       <v-card elevation="0">
