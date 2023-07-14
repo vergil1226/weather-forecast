@@ -88,7 +88,7 @@ export default {};
 
 <style lang="scss" scoped>
 .forecast-card {
-  background: rgb(0,68,171);
+  background: rgb(0,68,171)!important;
   width: 455px;
   border-radius: 20px;
   margin-top: 42px;

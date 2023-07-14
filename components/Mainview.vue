@@ -70,6 +70,7 @@ export default {
     linear-gradient(0deg, #15488a, #15488a);
   width: 1001px;
   height: 999px;
+  box-sizing: border-box;
   &__title {
     font-family: SF Pro Display;
     font-size: 31px;
