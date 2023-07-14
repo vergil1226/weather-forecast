@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import FiveDayForecastCards from "./FiveDayForecastCards.vue";
+
 export default {
   data() {
     return {

@@ -48,10 +48,10 @@
 
 <script>
 import RecentList from './RecentList.vue';
-import SnackbarVue from './Snackbar.vue';
+import Snackbar from './Snackbar.vue';
 
 export default {
-  components: { RecentList },
+  components: { RecentList, Snackbar},
   data() {
     return {
       searchQuery: '',
@@ -62,42 +62,7 @@ export default {
       type: [Number, String],
     }
   },
-  mounted() {
-      this.refreshTime();
-      setInterval(this.refreshTime, 5 * 60 * 1000);
-  },
-    methods: {
-      // refreshTime() {
-      //   // Get the current time for a specific location
-      //   const currentTime = moment().tz('America/New_York');
-        
-      //   // Format the time using Moment. js
-      //   const formattedTime = currentTime.format('YYYY-MM-DD HH:mm:ss')
-
-      //   this.formattedTime = formattedTime;
-      }
-    }
-    // async getGeolocation() {
-    //   try {
-    //     const { data } = await this.$axios.$get("/geolocation");
-
-    //     const response = this.$normalize(data);
-
-    //     this.geolocation = response.map((item) => ({
-    //       ...item,
-    //       clicked: item.located,
-    //     }));
-    //   } catch (error) {
-    //     console.log(error);
-    //   }
-    // // },
-    // moveCard(item) {
-    //   item.clicked = !item.clicked;
-    //   setTimeout(() => {
-    //   item.located = !item.located;
-    //   this.mapToDatabase(item);
-    //   }, 5*60* 1000);
-    // }
+}
     // searchLocation() {
     //   // Here you can perform the search logic for the entered location
     //   // You can access the entered location via `this.searchQuery`
