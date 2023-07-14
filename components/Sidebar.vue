@@ -11,6 +11,7 @@
           dark
           permanent
         >
+        <!-- need to add fab -->
           <v-list>
             <v-card class="sidebar__card" color="#104084" elevation="0" @click="emit('someEvent')">
               <v-text-field
