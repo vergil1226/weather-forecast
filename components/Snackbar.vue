@@ -37,6 +37,7 @@
 .Snackbar {
   max-width: 346px;
   padding: 14px 57px 0 0;
+  display: none;
 }
 
 </style>
