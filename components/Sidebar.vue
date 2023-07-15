@@ -68,9 +68,9 @@ export default {
     //   // Here you can perform the search logic for the entered location
     //   // You can access the entered location via `this.searchQuery`
     //   console.log("Search query:", this.searchQuery);
-    // },
+    // }
 
-
+    // https://api.openweathermap.org/geo/1.0/direct?q=Tampa&limit=5&appid=b8f5d5a3c8c40a270978a5686d277fbd
 
 </script>
 
@@ -80,7 +80,8 @@ export default {
   &__card{
     padding-top: 30px;
     padding-bottom: 27px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
   }
 }
+
 </style>

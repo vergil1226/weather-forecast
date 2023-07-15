@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <Mainview />
+        <Mainview />
       <Nuxt />
     </v-main>
   </v-app>

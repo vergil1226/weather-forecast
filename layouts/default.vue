@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app dark class="app">
     <Sidebar />
     <v-main>
       <Nuxt />
@@ -17,3 +17,9 @@ export default {
 }
 
 </script>
+<style lang="scss" scoped>
+.app{
+  display: flex;
+  flex-direction: row;
+}
+</style>

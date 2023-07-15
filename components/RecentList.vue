@@ -13,7 +13,6 @@
               </v-col>
               <v-col cols="12">
                 <p class="recent-card__time">11:22 AM</p>
-                <!-- <p>Current time: {{ formattedTime }}</p> -->
               </v-col>
               <v-col cols="6">
                 <p class="recent-card__description">Mostly Sunny</p>
@@ -24,10 +23,10 @@
             </v-row>
           </v-container>
         </v-card>
-
+        </li>
         <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
-      </li>
-      <li>
+
+      <!-- <li>
         <v-card class="recent-card" background="#2566A3A6;">
           <v-container>
             <v-row no-gutters>
@@ -187,13 +186,26 @@
             </v-row>
           </v-container>
         </v-card>
-      </li>
+      </li> -->
     </ul>
   </section>
 </template>
 <!-- need to add mounted, methods, and computed below-->
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      info: null,
+    }
+  },
+  mounted() {
+    axios.get('https://https://api.openweathermap.org/geo/1.0/direct?q=Tampa&limit=5&appid=b8f5d5a3c8c40a270978a5686d277fbd')
+      .then(response => {
+      this.info = response
+      })
+      console.log (this.info)
+  }
+};
 </script>
 
 <style lang="scss" scoped>

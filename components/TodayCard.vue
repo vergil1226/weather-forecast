@@ -90,8 +90,10 @@ export default {
     color: #ffffff;
   }
   &__graphic{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
   }
 }
 .d-flex {
