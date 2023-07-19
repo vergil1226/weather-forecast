@@ -1,16 +1,8 @@
 <template>
   <!-- need to hide the snackbar-->
   <section class="Snackbar" elevation="0">
-    <v-btn
-      dark
-      @click="snackbar = true"
-      elevation="0"
-    >
-      Open Snackbar
-    </v-btn>
-    <v-snackbar
-      v-model="snackbar"
-    >
+    <v-btn dark @click="snackbar = true" elevation="0"> Open Snackbar </v-btn>
+    <v-snackbar v-model="snackbar">
       {{ text }}
 
       <template v-slot:action="{ attrs }">
@@ -29,8 +21,14 @@
 </template>
 
 <script>
-  export default {}
-
+export default {
+  data() {
+    return {
+      text: ", Vue!",
+      snackbar: true,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -39,5 +37,4 @@
   padding: 14px 57px 0 0;
   display: none;
 }
-
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <v-app dark class="app">
+  <div class="app">
     <Sidebar />
     <v-main>
       <Nuxt />
     </v-main>
-  </v-app>
+  </div>
 </template>
 
 <script>

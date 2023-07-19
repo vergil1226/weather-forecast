@@ -1,218 +1,83 @@
 <template>
-  <section class="recent" elevation="0">
-    <ul class="no-bullets">
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
+  <section class="recent" elevation="0" v-if="recentList">
+    <ul>
+      <li v-for="(data, index) in recentList" :key="index">
+        <v-card class="recent-card" @click="onCardClick(index)">
+          <div class="address-info">
+            <h1 class="recent-card__title">{{ data.name }}</h1>
+            <p class="recent-card__time">
+              {{ $moment.unix(data.dt).format("hh:mm A") }}
+            </p>
+            <p class="recent-card__description">
+              {{ data.weather[0].description }}
+            </p>
+          </div>
+          <div class="weather-info">
+            <p class="recent-card__degree">
+              {{ Math.round(data.main.temp - 273.15) }}&deg;
+            </p>
+            <p class="recent-card__range">
+              High: {{ Math.round(data.main.temp_max - 273.15) }}&deg; Low:
+              {{ Math.round(data.main.temp_min - 273.15) }}&deg;
+            </p>
+          </div>
+          <!-- <v-container>
             <v-row no-gutters>
               <v-col cols="6">
-                <h1 class="recent-card__title">Tarpon Springs</h1>
               </v-col>
               <v-col cols="6">
-                <p class="recent-card__degree">30&deg;</p>
               </v-col>
               <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
               </v-col>
               <v-col cols="6">
-                <p class="recent-card__description">Mostly Sunny</p>
               </v-col>
               <v-col cols="6">
-                <p class="recent-card__range">High: 34&deg; Low: 28&deg;</p>
               </v-col>
             </v-row>
-          </v-container>
-        </v-card>
-        </li>
-        <!-- add a v-for loop that through all the recent locations in vuex once that is done do not need the 7 other cards of code-->
-
-      <!-- <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Denver</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">52&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">9:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Cloudly</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 52&deg; Low: 34&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
+          </v-container> -->
         </v-card>
       </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Tampa</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">32&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Sunny</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Jacksonville</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">32&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Cloudy</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 36&deg; Low: 21&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Denver</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">52&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">9:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Cloudly</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 52&deg; Low: 34&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Tampa</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">32&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Sunny</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Jacksonville</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">32&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Cloudy</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 36&deg; Low: 21&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li>
-      <li>
-        <v-card class="recent-card" background="#2566A3A6;">
-          <v-container>
-            <v-row no-gutters>
-              <v-col cols="6">
-                <h1 class="recent-card__title">Tampa</h1>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__degree">32&deg;</p>
-              </v-col>
-              <v-col cols="12">
-                <p class="recent-card__time">11:22 AM</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__description">Mostly Sunny</p>
-              </v-col>
-              <v-col cols="6">
-                <p class="recent-card__range">High: 32&deg; Low: 24&deg;</p>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </li> -->
     </ul>
   </section>
 </template>
 <!-- need to add mounted, methods, and computed below-->
 <script>
 export default {
-  data() {
-    return {
-      info: null,
-    }
+  computed: {
+    recentList() {
+      return this.$store.getters.getRecentList;
+    },
   },
-  mounted() {
-    axios.get('https://https://api.openweathermap.org/geo/1.0/direct?q=Tampa&limit=5&appid=b8f5d5a3c8c40a270978a5686d277fbd')
-      .then(response => {
-      this.info = response
-      })
-      console.log (this.info)
-  }
+  methods: {
+    onCardClick(index) {
+      this.$store.dispatch("updateCardSelection", this.recentList.length - index - 1);
+    },
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+.recent {
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  padding-left: 13px;
+  padding-right: 16px;
+}
 .recent-card {
-  max-width: 346px;
   border-radius: 20px;
-  background: #2566a333;
+  background: rgba(37, 102, 163, 0.2);
+  box-shadow: none !important;
+  border: 1px solid #377ce5;
+  padding: 15px 24px 20px 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   &__title {
     font-family: SF Pro Display;
     font-size: 22px;
@@ -241,6 +106,8 @@ export default {
     letter-spacing: 0em;
     text-align: left;
     color: #ffffff;
+    text-transform: Capitalize;
+    margin-bottom: 0;
   }
   &__degree {
     font-family: SF Pro Display;
@@ -250,6 +117,7 @@ export default {
     letter-spacing: 0em;
     text-align: center;
     color: #ffffff;
+    margin-bottom: 0;
   }
   &__range {
     font-family: SF Pro Display;
@@ -259,9 +127,13 @@ export default {
     letter-spacing: 0em;
     text-align: right;
     color: #ffffff;
+    margin-bottom: 0;
   }
-}
-.recent .no-bullets {
-  list-style: none;
+  &::before {
+    border-radius: 20px;
+  }
+  &:hover {
+    background: rgba(37, 102, 163, 0.5);
+  }
 }
 </style>

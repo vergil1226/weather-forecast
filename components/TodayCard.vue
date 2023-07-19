@@ -1,30 +1,35 @@
 <template>
   <!-- only have to do a 3 hr forecast so stop after 3 hourly / forecast section here in doc-->
-  <section class="today">
+  <section class="today" v-if="forecastData">
     <v-card class="today-card" elevation="0">
       <v-container>
         <v-row no-gutters>
           <v-col cols="6">
-              <h2 class="today-card__title">Today</h2>
-              </v-col>
-              <v-col cols="6">
-              <p class="today-card__date">Mar, 9</p>
+            <h2 class="today-card__title">Today</h2>
           </v-col>
-          <v-col cols="3">
+          <v-col cols="6">
+            <p class="today-card__date">{{ $moment().format("MMMM, DD") }}</p>
+          </v-col>
+          <v-col
+            class="today-card__main"
+            cols="1.5"
+            v-for="(data, index) in forecastData.list.slice(0, 8)"
+            :key="index"
+          >
             <div class="d-flex">
-              <p class="today-card__degrees">29&deg;C</p>
-              <p class="today-card__degrees">26&deg;C</p>
-              <p class="today-card__degrees">24&deg;C</p>
+              <p class="today-card__degrees">
+                {{ Math.round(data.main.temp - 273.15) }}&deg;C
+              </p>
             </div>
             <div class="d-flex">
-              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
-              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
-              <img src="/TodaySunCloud.png" class="today-card__graphic" alt="" />
+              <img
+                :src="`https://openweathermap.org/img/wn/${data.weather[0].icon}.png`"
+                class="today-card__graphic"
+                alt=""
+              />
             </div>
             <div class="d-flex">
-              <p class="today-card__time">Now</p>
-              <p class="today-card__time">12PM</p>
-              <p class="today-card__time">1PM</p>
+              <p class="today-card__time">{{ $moment(data.dt_txt).format("h A") }}</p>
             </div>
           </v-col>
         </v-row>
@@ -34,25 +39,40 @@
 </template>
 
 <script>
-
 export default {
   data() {
     return {
       forecast: {},
     };
   },
-  methods: {
+  methods: {},
+  computed: {
+    forecastData() {
+      return this.$store.getters.getForecastData;
+    },
   },
-  computed() {},
 };
 </script>
 
 <style lang="scss" scoped>
 .today-card {
-  background: rgb(0,68,171);
+  background: #0d3a8a;
   max-width: 940px;
   border-radius: 20px;
-  margin-left: 30.5px;
+  margin-left: auto;
+  margin-right: auto;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
   &__title {
     font-family: SF Pro Display;
     font-size: 20px;
@@ -89,9 +109,9 @@ export default {
     text-align: center;
     color: #ffffff;
   }
-  &__graphic{
-    height: 100px;
-    width: 100px;
+  &__graphic {
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
   }
